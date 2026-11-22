@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Peach Tarot — Soft Wisdom from the Cards</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Ambient particles / soft glow layer -->
+  <div class="ambient-glow"></div>
+
+  <!-- Wooden table surface -->
+  <div class="table-surface">
+    
+    <!-- Header / Branding -->
+    <header class="site-header">
+      <div class="logo-plate">
+        <div class="peach-icon">🍑</div>
+        <h1 class="brand-title">Peach Tarot</h1>
+        <p class="brand-tagline">Gentle guidance • Soft revelations</p>
+      </div>
+    </header>
+
+    <!-- Navigation as physical tabs -->
+    <nav class="nav-tabs">
+      <button class="nav-tab active" data-section="draw">Daily Draw</button>
+      <button class="nav-tab" data-section="about">About</button>
+      <button class="nav-tab" data-section="spreads">Spreads</button>
+      <button class="nav-tab" data-section="contact">Contact</button>
+    </nav>
+
+    <!-- Main content area -->
+    <main class="content-area">
+
+      <!-- DAILY DRAW SECTION -->
+      <section id="draw" class="section active">
+        <div class="section-header">
+          <h2>Today’s Card</h2>
+          <p class="whisper">Take a breath. Shuffle with intention. Draw when ready.</p>
+        </div>
+
+        <div class="draw-stage">
+          <div class="card-deck" id="deck">
+            <div class="deck-stack">
+              <div class="deck-card back"></div>
+              <div class="deck-card back"></div>
+              <div class="deck-card back"></div>
+              <div class="deck-card back"></div>
+            </div>
+            <button class="draw-btn" id="drawBtn">
+              <span class="btn-text">Draw a Card</span>
+            </button>
+          </div>
+
+          <div class="drawn-card-area" id="drawnArea">
+            <div class="tarot-card" id="tarotCard">
+              <div class="card-inner">
+                <div class="card-face card-back">
+                  <div class="back-pattern">
+                    <div class="peach-motif">🍑</div>
+                    <div class="back-ornament top"></div>
+                    <div class="back-ornament bottom"></div>
+                  </div>
+                </div>
+                <div class="card-face card-front">
+                  <div class="card-number" id="cardNumber"></div>
+                  <div class="card-title" id="cardTitle"></div>
+                  <div class="card-art" id="cardArt"></div>
+                  <div class="card-keywords" id="cardKeywords"></div>
+                </div>
+              </div>
+            </div>
+            <div class="card-meaning" id="cardMeaning">
+              <h3 id="meaningTitle"></h3>
+              <p id="meaningText"></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT SECTION -->
+      <section id="about" class="section">
+        <div class="section-header">
+          <h2>The Peach Way</h2>
+          <p class="whisper">Soft. Intuitive. Kind to the soul.</p>
+        </div>
+        <div class="about-content">
+          <div class="parchment">
+            <p>
+              Peach Tarot is a gentle approach to the classic cards. 
+              We believe guidance should feel like a warm peach on a summer afternoon — 
+              sweet, nourishing, and never harsh.
+            </p>
+            <p>
+              Whether you seek clarity on love, work, or the quiet questions of the heart, 
+              our readings honor both the light and the soft shadows. 
+              Every card is an invitation, never a verdict.
+            </p>
+            <div class="signature">
+              <span class="sig-text">With soft light,</span>
+              <span class="sig-name">Peach</span>
+            </div>
+          </div>
+          <div class="peach-illustration">
+            <div class="big-peach">🍑</div>
+            <p class="illus-caption">May your path be ripe with possibility</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- SPREADS SECTION -->
+      <section id="spreads" class="section">
+        <div class="section-header">
+          <h2>Classic Spreads</h2>
+          <p class="whisper">Choose the shape that fits your question</p>
+        </div>
+        <div class="spreads-grid">
+          <div class="spread-card">
+            <div class="spread-visual three-card">
+              <span></span><span></span><span></span>
+            </div>
+            <h3>Past • Present • Future</h3>
+            <p>A simple, clear look at the flow of energy around a situation.</p>
+          </div>
+          <div class="spread-card">
+            <div class="spread-visual celtic">
+              <span></span><span></span><span></span>
+              <span></span><span></span>
+            </div>
+            <h3>The Soft Cross</h3>
+            <p>Five cards exploring the heart of the matter and gentle advice.</p>
+          </div>
+          <div class="spread-card">
+            <div class="spread-visual single">
+              <span></span>
+            </div>
+            <h3>One Card Insight</h3>
+            <p>Perfect for daily guidance or a focused yes/no with nuance.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT SECTION -->
+      <section id="contact" class="section">
+        <div class="section-header">
+          <h2>Private Readings</h2>
+          <p class="whisper">Book a soft space for your questions</p>
+        </div>
+        <div class="contact-content">
+          <div class="contact-card">
+            <h3>Online & In-Person</h3>
+            <ul class="service-list">
+              <li><span class="dot"></span> 30-minute soft reading</li>
+              <li><span class="dot"></span> 60-minute deep dive</li>
+              <li><span class="dot"></span> Written multi-card report</li>
+              <li><span class="dot"></span> Zodiac + Tarot monthly</li>
+            </ul>
+            <button class="book-btn">Request a Reading</button>
+          </div>
+          <div class="contact-note">
+            <p>
+              All readings are held with care and confidentiality. 
+              You will receive a confirmation and a gentle preparation note after booking.
+            </p>
+            <p class="email-line">peach@peachtarot.example</p>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <p>© 2026 Peach Tarot • Made with soft intention</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
